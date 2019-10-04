@@ -9,7 +9,8 @@ import '../assets/styles/App.scss';
 const App = () => (
   <div className='App'>
     <Header />
-    {/* <Search />
+    {/* 
+    <Search />
     <Categories>
       <Carousel>
         <CarouselItem />
