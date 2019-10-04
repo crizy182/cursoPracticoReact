@@ -9,7 +9,6 @@ import '../assets/styles/App.scss';
 const App = () => (
   <div className='App'>
     <Header />
-    {/* 
     <Search />
     <Categories>
       <Carousel>
@@ -19,7 +18,7 @@ const App = () => (
         <CarouselItem />
         <CarouselItem />
       </Carousel>
-    </Categories> */}
+    </Categories>
   </div>
 );
 
