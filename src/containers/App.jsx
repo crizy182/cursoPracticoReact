@@ -7,9 +7,11 @@ import CarouselItem from '../components/CarouselItem';
 import Footer from '../components/Footer';
 import '../assets/styles/App.scss';
 
+
 const API = 'http://localhost:3000/initalState';
 const App = () => {
-  const [videos, setVideos] = useState([]);
+  const [videos, setVideos] = useState({ mylist: [], trends: [], originals: [] });
+  // const [videos, setVideos] = useState([]);
 
   useEffect(() => {
     fetch(API)
@@ -25,7 +27,7 @@ const App = () => {
       <Search />
 
       {
-        videos.myList.length > 0 && (
+        videos.mylist.length > 0 && (
           <Categories title='Mi lista'>
             <Carousel>
               <CarouselItem />
