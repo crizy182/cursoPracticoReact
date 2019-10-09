@@ -1,10 +1,10 @@
 const reducer = (state, action) => {
 
-  switch(action.type) {
+  switch (action.type) {
     case 'SET_FAVORITE':
       return {
         ...state,
-        myList: [...state.myList, action.payload]
+        myList: [...state.myList, action.payload],
       };
     default:
       return state;

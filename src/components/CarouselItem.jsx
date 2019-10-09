@@ -15,7 +15,11 @@ const CarouselItem = (props) => {
   };
   return (
     <div className='carousel-item'>
-      <img className='carousel-item__img' src={cover} alt={title} />
+      <img
+        className='carousel-item__img'
+        src={cover}
+        alt={title}
+      />
       <div className='carousel-item__details'>
         <div>
           <img
